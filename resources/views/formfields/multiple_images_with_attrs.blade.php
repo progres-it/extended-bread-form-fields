@@ -10,12 +10,13 @@
                         <a href="#" class="voyager-params show-inputs"></a>
                         <a href="#" class="voyager-x remove-multi-image-ext"></a>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label><b>alt:</b><input class="form-control" type="text" name="{{ $row->field }}_ext[{{ $loop->index }}][alt]" value="{{ $image->alt }}"></label>
-                        <label><b>title:</b><input class="form-control" type="text" name="{{ $row->field }}_ext[{{ $loop->index }}][title]" value="{{ $image->title }}"></label>
+                        <label><b>Порядок:</b><input class="form-control" type="text" name="{{ $row->field }}_ext[{{ $loop->index }}][order]" value="{{ $image->order ?? '' }}"></label>
+                        <label><b>Alt:</b><input class="form-control" type="text" name="{{ $row->field }}_ext[{{ $loop->index }}][alt]" value="{{ $image->alt }}"></label>
+                        <label><b>Title:</b><input class="form-control" type="text" name="{{ $row->field }}_ext[{{ $loop->index }}][title]" value="{{ $image->title }}"></label>
                     </div>
-                    
+
                 </div>
             @endforeach
         </div>
@@ -43,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function(){
         $('.confirm_delete_name').text($image.data('image'));
         $('#confirm_delete_modal').modal('show');
     });
-    
+
     $('.show-inputs').on('click', function (e) {
         e.preventDefault();
         $(this).parent().parent().children('.form-group').toggle();
-    });    
+    });
 });
 </script>
 
@@ -70,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function(){
     margin-right: 10px;
 }
 .multiple-images img{
-    max-width:200px; 
-    height:auto; 
-    display:block; 
-    padding:2px; 
-    border:1px solid #ddd; 
+    max-width:200px;
+    height:auto;
+    display:block;
+    padding:2px;
+    border:1px solid #ddd;
     margin-bottom:5px;
 }
 .multiple-images .form-group{
@@ -85,8 +86,9 @@ document.addEventListener('DOMContentLoaded', function(){
 }
 .multiple-images label b{
     display: inline-block;
+    font-weight: bold;
     font-size: 10px;
-    width: 25px;
+    width: 50px;
 }
 .multiple-images label input{
     width: 160px;

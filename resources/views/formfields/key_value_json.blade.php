@@ -18,7 +18,7 @@
             </div>
             
             <div class="col-xs-1" style="margin-bottom:0;">
-                <button type="button" class="btn old_btn btn-xs" style="margin-top:0px;"><i class="voyager-trash"></i></button>
+                <button type="button" class="btn btn-xs" style="margin-top:0px;"><i class="voyager-trash"></i></button>
             </div>
         </div>
         @php 
@@ -74,7 +74,7 @@
         this.parentNode.parentNode.remove();
     }
 
-    var buttons = document.querySelectorAll('.custom-parameters .old_btn');
+    var buttons = document.querySelectorAll('.custom-parameters .btn');
     for (var i = 0; i < buttons.length; i++) buttons[i].onclick = removeRow;
     var suc_buttons = document.querySelectorAll('.custom-parameters .btn-success');
     suc_buttons[suc_buttons.length - 1].onclick = addRow;
