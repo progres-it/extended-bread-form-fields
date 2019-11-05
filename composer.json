@@ -1,35 +1,35 @@
 {
-    "name": "extended-bread-form-fields",
-    "description": "Extended FormFields hook interface to Voyager BREAD",
-    "tags": [
-        "voyager",
-        "FormField",
-        "key-value-json",
-        "multiple images attributes"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "bnku",
-            "email": "bnku@ya.ru"
-        }
-    ],
-    "require": {
-        "larapack/hooks": "^1.0.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "ExtendedBreadFormFields\\": "src/"
-        }
-    },
-    "extra": {
-        "hook": {
-            "providers": [
-                "ExtendedBreadFormFields\\ExtendedBreadFormFieldsServiceProvider"
-            ],
-            "views": [
-                "resources/vievs"
-            ]
-        }
+  "name": "progres-it/extended-bread-form-fields",
+  "description": "Extended FormFields hook interface to Voyager BREAD",
+  "tags": [
+    "voyager",
+    "FormField",
+    "key-value-json",
+    "multiple images attributes"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "bnku",
+      "email": "bnku@ya.ru"
     }
+  ],
+  "require": {
+    "larapack/hooks": "^1.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExtendedBreadFormFields\\": "src/"
+    }
+  },
+  "extra": {
+    "hook": {
+      "providers": [
+        "ExtendedBreadFormFields\\ExtendedBreadFormFieldsServiceProvider"
+      ],
+      "views": [
+        "resources/vievs"
+      ]
+    }
+  }
 }
